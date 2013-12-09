@@ -6,6 +6,9 @@
     "start": "node app"
   },
   "dependencies": {
-    "ntwitter": "*"
+    "ntwitter": "*",
+	"play": "*",
+	"lame":"*",
+	"speaker":"*"
   }
 }
