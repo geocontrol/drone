@@ -16,8 +16,8 @@ fs.createReadStream('./sounds/drone_demo_01.mp3')
   .on('format', console.log)
   .pipe(new Speaker);
 
-//twit.stream('statuses/filter', {'follow':'904137332'}, function(stream) {
-twit.stream('statuses/filter', {'follow':'5791'}, function(stream) {
+twit.stream('statuses/filter', {'follow':'904137332'}, function(stream) {
+//twit.stream('statuses/filter', {'follow':'5791'}, function(stream) {
   stream.on('data', function (data) {
     console.log(data);
 	play.sound('./sounds/ky57.wav', function(){
